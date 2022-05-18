@@ -15,6 +15,7 @@ mix.browserSync({
     proxy: "127.0.0.1:8000", // アプリの起動アドレス（ここではphp artisan serve時のアドレスを設定）
     open: false, // ブラウザを自動で開かない
 })
+    .vue()
     .js("resources/js/app.js", "public/js")
     .version();
 
